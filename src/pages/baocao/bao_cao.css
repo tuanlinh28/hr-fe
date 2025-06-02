@@ -1,0 +1,49 @@
+/* Cập nhật màu sắc của các icon */
+.ant-btn-link {
+  font-size: 18px;
+  color: #ff6347; /* Màu đỏ cam cho các icon */
+  transition: all 0.3s ease;
+}
+
+.ant-btn-link:hover {
+  color: #ff1493; /* Màu hồng đậm khi hover */
+  transform: scale(1.1);
+}
+
+/* Màu sắc cho các icon trong bảng thống kê */
+.statistic-card .ant-statistic-icon {
+  color: #ff5733; /* Màu cam sáng cho icon trong thống kê */
+}
+
+/* Cải thiện màu sắc icon trong Action Column */
+.ant-btn-link > .anticon {
+  color: #ff6347; /* Màu đỏ cam cho các icon trong bảng hành động */
+}
+
+.ant-btn-link:hover > .anticon {
+  color: #ff1493; /* Màu hồng đậm khi hover */
+}
+
+/* Màu sắc cho icon Xóa */
+.ant-btn-link .anticon-delete {
+  color: #e74c3c; /* Màu đỏ sáng cho icon xóa */
+}
+
+/* Màu sắc cho icon Xem chi tiết */
+.ant-btn-link .anticon-eye {
+  color: #2ecc71; /* Màu xanh lá cho icon xem chi tiết */
+}
+
+/* Màu sắc cho icon thống kê */
+.ant-statistic-title > .anticon {
+  color: #ff6347; /* Màu đỏ cam cho các icon trong card thống kê */
+}
+
+/* Đổi màu sắc icon Pie Chart */
+.ant-card-body .ant-statistic-content-value {
+  color: #ff6347; /* Màu đỏ cam cho biểu đồ Pie */
+}
+
+.ant-modal-header .ant-modal-title .anticon {
+  color: #ffffff; /* Đặt màu trắng cho icon trong header modal */
+}
