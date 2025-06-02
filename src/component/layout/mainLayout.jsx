@@ -22,11 +22,9 @@ const MainLayout = () => {
     const [reloadFn, setReloadFn] = useState(() => () => { });
     const [isMobile, setIsMobile] = useState(false);
     const [drawerVisible, setDrawerVisible] = useState(false);
-
-    // Kiểm tra kích thước màn hình
     useEffect(() => {
         const checkScreenSize = () => {
-            setIsMobile(window.innerWidth < 992); // lg breakpoint của Ant Design
+            setIsMobile(window.innerWidth < 992);
         };
 
         checkScreenSize();
@@ -126,7 +124,6 @@ const MainLayout = () => {
                     />
                 </Layout.Header>
 
-                {/* Drawer full screen cho mobile */}
                 <Drawer
                     title={null}
                     placement="left"
@@ -150,7 +147,7 @@ const MainLayout = () => {
                         background: '#71A5E0',
                         position: 'relative'
                     }}>
-                        {/* Nút đóng */}
+       
                         <div style={{
                             position: 'absolute',
                             top: '16px',
@@ -194,8 +191,6 @@ const MainLayout = () => {
             </Layout>
         );
     }
-
-    // Desktop layout (giữ nguyên như cũ)
     return (
         <Layout style={{ height: '100dvh', minHeight: '100dvh' }}>
             <Layout.Sider 
